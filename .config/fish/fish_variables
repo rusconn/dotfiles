@@ -1,6 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_cat:bat
+SETUVAR _fish_abbr_find:fd
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_ga_2E_:git\x20add\x20\x2e
 SETUVAR _fish_abbr_ga_2E_c:git\x20add\x20\x2e\x20\x26\x26\x20git\x20commit
@@ -35,6 +37,7 @@ SETUVAR _fish_abbr_grbc:git\x20rebase\x20\x2d\x2dcontinue
 SETUVAR _fish_abbr_grbd:git\x20rebase\x20develop
 SETUVAR _fish_abbr_grbi:git\x20rebase\x20\x2di
 SETUVAR _fish_abbr_grbir:git\x20rebase\x20\x2di\x20\x2d\x2droot
+SETUVAR _fish_abbr_grep:rg
 SETUVAR _fish_abbr_grm:git\x20rm
 SETUVAR _fish_abbr_grss:git\x20restore\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_grsw:git\x20restore\x20\x2d\x2dworktree
@@ -53,7 +56,9 @@ SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gsw_2D_:git\x20switch\x20\x2d
 SETUVAR _fish_abbr_gswc:git\x20switch\x20\x2d\x2dcreate
 SETUVAR _fish_abbr_gswd:git\x20switch\x20\x2d\x2ddetach
-SETUVAR _fish_abbr_ll:ls\x20\x2dlha
+SETUVAR _fish_abbr_ll:exa\x20\x2dlha
+SETUVAR _fish_abbr_ls:exa
+SETUVAR _fish_abbr_wc:tokei
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
