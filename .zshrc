@@ -19,4 +19,9 @@ autoload -Uz compinit
 compinit
 
 # aliases
-alias ll='ls -lha'
+alias ls='exa'
+alias ll='ls -la'
+alias cat='bat'
+alias grep='rg'
+alias find='fd'
+alias wc='tokei'
