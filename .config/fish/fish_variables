@@ -1,7 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
-SETUVAR _fish_abbr_ll:ls\x20\x2dlha
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_ga_2E_:git\x20add\x20\x2e
 SETUVAR _fish_abbr_ga_2E_c:git\x20add\x20\x2e\x20\x26\x26\x20git\x20commit
@@ -45,6 +44,7 @@ SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gsw_2D_:git\x20switch\x20\x2d
 SETUVAR _fish_abbr_gswc:git\x20switch\x20\x2d\x2dcreate
 SETUVAR _fish_abbr_gswd:git\x20switch\x20\x2d\x2ddetach
+SETUVAR _fish_abbr_ll:ls\x20\x2dlha
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -67,7 +67,7 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell
+SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
