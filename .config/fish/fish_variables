@@ -2,6 +2,24 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_cat:bat
+SETUVAR _fish_abbr_d_2D_c:docker\x20compose
+SETUVAR _fish_abbr_d_2D_cb:docker\x20compose\x20build
+SETUVAR _fish_abbr_d_2D_cc:docker\x20compose\x20convert
+SETUVAR _fish_abbr_d_2D_cd:docker\x20compose\x20down
+SETUVAR _fish_abbr_d_2D_cl:docker\x20compose\x20ls\x20\x2da
+SETUVAR _fish_abbr_d_2D_cr:docker\x20compose\x20run\x20\x2d\x2drm
+SETUVAR _fish_abbr_d_2D_cs:docker\x20compose\x20stop
+SETUVAR _fish_abbr_d_2D_cu:docker\x20compose\x20up
+SETUVAR _fish_abbr_db:docker\x20build
+SETUVAR _fish_abbr_dc:docker\x20container
+SETUVAR _fish_abbr_dcl:docker\x20container\x20ls\x20\x2da
+SETUVAR _fish_abbr_dcr:docker\x20container\x20run\x20\x2dit\x20\x2d\x2drm
+SETUVAR _fish_abbr_dil:docker\x20image\x20ls\x20\x2da
+SETUVAR _fish_abbr_dir:docker\x20image\x20rm
+SETUVAR _fish_abbr_dnl:docker\x20network\x20ls
+SETUVAR _fish_abbr_dnr:docker\x20network\x20rm
+SETUVAR _fish_abbr_dvl:docker\x20volume\x20ls
+SETUVAR _fish_abbr_dvr:docker\x20volume\x20rm
 SETUVAR _fish_abbr_find:fd
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_ga_2E_:git\x20add\x20\x2e
