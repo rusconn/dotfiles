@@ -4,6 +4,7 @@ SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_ga_2E_:git\x20add\x20\x2e
 SETUVAR _fish_abbr_ga_2E_c:git\x20add\x20\x2e\x20\x26\x26\x20git\x20commit
+SETUVAR _fish_abbr_gap:git\x20add\x20\x2dp
 SETUVAR _fish_abbr_gbr:git\x20branch
 SETUVAR _fish_abbr_gbrd:git\x20branch\x20\x2d\x2ddelete
 SETUVAR _fish_abbr_gbrdf:git\x20branch\x20\x2d\x2ddelete\x20\x2d\x2dforce
@@ -29,12 +30,15 @@ SETUVAR _fish_abbr_gplrod:git\x20pull\x20\x2d\x2drebase\x20origin\x20develop
 SETUVAR _fish_abbr_gps:git\x20push
 SETUVAR _fish_abbr_gpsf:git\x20push\x20\x2d\x2dforce\x2dwith\x2dlease
 SETUVAR _fish_abbr_grb:git\x20rebase
+SETUVAR _fish_abbr_grba:git\x20rebase\x20\x2d\x2dabort
 SETUVAR _fish_abbr_grbc:git\x20rebase\x20\x2d\x2dcontinue
 SETUVAR _fish_abbr_grbd:git\x20rebase\x20develop
 SETUVAR _fish_abbr_grbi:git\x20rebase\x20\x2di
+SETUVAR _fish_abbr_grbir:git\x20rebase\x20\x2di\x20\x2d\x2droot
 SETUVAR _fish_abbr_grm:git\x20rm
 SETUVAR _fish_abbr_grs:git\x20restore
 SETUVAR _fish_abbr_grss:git\x20restore\x20\x2d\x2dstaged
+SETUVAR _fish_abbr_grsw:git\x20restore\x20\x2d\x2dworktree
 SETUVAR _fish_abbr_grt:git\x20reset
 SETUVAR _fish_abbr_grth:git\x20reset\x20\x2d\x2dhard
 SETUVAR _fish_abbr_grtho:git\x20reset\x20\x2d\x2dhard\x20ORIG_HEAD
