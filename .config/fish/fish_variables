@@ -28,7 +28,7 @@ SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gplr:git\x20pull\x20\x2d\x2drebase
 SETUVAR _fish_abbr_gplrod:git\x20pull\x20\x2d\x2drebase\x20origin\x20develop
 SETUVAR _fish_abbr_gps:git\x20push
-SETUVAR _fish_abbr_gpsf:git\x20push\x20\x2d\x2dforce\x2dwith\x2dlease
+SETUVAR _fish_abbr_gpsf:git\x20push\x20\x2d\x2dforce\x2dwith\x2dlease\x20\x2d\x2dforce\x2dif\x2dincludes
 SETUVAR _fish_abbr_grb:git\x20rebase
 SETUVAR _fish_abbr_grba:git\x20rebase\x20\x2d\x2dabort
 SETUVAR _fish_abbr_grbc:git\x20rebase\x20\x2d\x2dcontinue
