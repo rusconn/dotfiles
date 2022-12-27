@@ -4,9 +4,9 @@ SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_d_2D_c:docker\x20compose
 SETUVAR _fish_abbr_d_2D_cb:docker\x20compose\x20build
-SETUVAR _fish_abbr_d_2D_cbd:docker\x20compose\x20\x2df\x20docker\x2dcompose\x2eyml\x20\x2df\x20\x2edevcontainer/docker\x2dcompose\x2eyml\x20build
 SETUVAR _fish_abbr_d_2D_cc:docker\x20compose\x20convert
 SETUVAR _fish_abbr_d_2D_cd:docker\x20compose\x20down
+SETUVAR _fish_abbr_d_2D_cdb:docker\x20compose\x20\x2df\x20docker\x2dcompose\x2eyml\x20\x2df\x20\x2edevcontainer/docker\x2dcompose\x2eyml\x20build
 SETUVAR _fish_abbr_d_2D_cl:docker\x20compose\x20ls\x20\x2da
 SETUVAR _fish_abbr_d_2D_cr:docker\x20compose\x20run\x20\x2d\x2drm
 SETUVAR _fish_abbr_d_2D_cs:docker\x20compose\x20stop
