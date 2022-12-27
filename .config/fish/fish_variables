@@ -15,6 +15,7 @@ SETUVAR _fish_abbr_db:docker\x20build
 SETUVAR _fish_abbr_dc:docker\x20container
 SETUVAR _fish_abbr_dcl:docker\x20container\x20ls\x20\x2da
 SETUVAR _fish_abbr_dcr:docker\x20container\x20run\x20\x2dit\x20\x2d\x2drm
+SETUVAR _fish_abbr_dih:docker\x20image\x20history
 SETUVAR _fish_abbr_dil:docker\x20image\x20ls\x20\x2da\x20\x7c\x20sort
 SETUVAR _fish_abbr_dir:docker\x20image\x20rm
 SETUVAR _fish_abbr_dnl:docker\x20network\x20ls
