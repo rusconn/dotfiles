@@ -1,5 +1,8 @@
 [include]
 	path = config.local
+[user]
+	name = rusconn
+	email = rusconn3@gmail.com
 [rebase]
 	autosquash = true
 [fetch]
