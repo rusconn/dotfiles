@@ -43,6 +43,12 @@ SETUVAR _fish_abbr_grt:git\x20reset
 SETUVAR _fish_abbr_grth:git\x20reset\x20\x2d\x2dhard
 SETUVAR _fish_abbr_grtho:git\x20reset\x20\x2d\x2dhard\x20ORIG_HEAD
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_gsh:git\x20stash\x20\x2d\x2dmessage
+SETUVAR _fish_abbr_gsha:git\x20stash\x20apply
+SETUVAR _fish_abbr_gshc:git\x20stash\x20clear
+SETUVAR _fish_abbr_gshd:git\x20stash\x20drop
+SETUVAR _fish_abbr_gshk:git\x20stash\x20\x2d\x2dkeep\x2dindex
+SETUVAR _fish_abbr_gshp:git\x20stash\x20pop
 SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gsw_2D_:git\x20switch\x20\x2d
