@@ -3,4 +3,7 @@ if status is-login
 
     # google-cloud-sdk
     source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+
+    # deno binaries
+    set -gx PATH "$HOME/.deno/bin" $PATH
 end
