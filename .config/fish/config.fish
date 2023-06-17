@@ -4,6 +4,9 @@ if status is-login
     # google-cloud-sdk
     source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 
+    # Added by OrbStack: command-line tools and integration
+    source ~/.orbstack/shell/init.fish 2>/dev/null || :
+
     # deno binaries
     set -gx PATH "$HOME/.deno/bin" $PATH
 end
