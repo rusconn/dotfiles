@@ -6,6 +6,9 @@ if status is-login
     end
 
     eval (/opt/homebrew/bin/brew shellenv)
+
+    # Added by OrbStack: command-line tools and integration
+    source ~/.orbstack/shell/init.fish 2>/dev/null || :
 end
 
 # mise
