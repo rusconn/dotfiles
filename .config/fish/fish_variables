@@ -1,7 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3400
-SETUVAR _fish_abbr_cat:bat
 SETUVAR _fish_abbr_d_2D_c:docker\x20compose
 SETUVAR _fish_abbr_d_2D_cb:docker\x20compose\x20build
 SETUVAR _fish_abbr_d_2D_cc:docker\x20compose\x20convert
