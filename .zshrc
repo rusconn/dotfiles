@@ -21,7 +21,6 @@ compinit
 # aliases
 alias ls='exa'
 alias ll='ls -la'
-alias cat='bat'
 alias grep='rg'
 alias find='fd'
 alias wc='tokei'
