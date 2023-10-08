@@ -36,7 +36,6 @@ SETUVAR _fish_abbr_grbd:git\x20rebase\x20develop
 SETUVAR _fish_abbr_grbi:git\x20rebase\x20\x2di
 SETUVAR _fish_abbr_grbir:git\x20rebase\x20\x2di\x20\x2d\x2droot
 SETUVAR _fish_abbr_grm:git\x20rm
-SETUVAR _fish_abbr_grs:git\x20restore
 SETUVAR _fish_abbr_grss:git\x20restore\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_grsw:git\x20restore\x20\x2d\x2dworktree
 SETUVAR _fish_abbr_grt:git\x20reset
