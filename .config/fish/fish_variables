@@ -76,8 +76,8 @@ SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gsw_2D_:git\x20switch\x20\x2d
 SETUVAR _fish_abbr_gswc:git\x20switch\x20\x2d\x2dcreate
 SETUVAR _fish_abbr_gswd:git\x20switch\x20\x2d\x2ddetach
-SETUVAR _fish_abbr_ll:exa\x20\x2dlha
-SETUVAR _fish_abbr_ls:exa
+SETUVAR _fish_abbr_ll:eza\x20\x2dlha
+SETUVAR _fish_abbr_ls:eza
 SETUVAR _fish_abbr_wc:tokei
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
