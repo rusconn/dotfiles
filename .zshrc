@@ -19,7 +19,7 @@ autoload -Uz compinit
 compinit
 
 # aliases
-alias ls='exa'
+alias ls='eza'
 alias ll='ls -la'
 alias grep='rg'
 alias find='fd'
