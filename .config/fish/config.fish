@@ -6,7 +6,7 @@ if status is-login
 
     # Added by OrbStack: command-line tools and integration
     source ~/.orbstack/shell/init.fish 2>/dev/null || :
-
-    # deno binaries
-    set -gx PATH "$HOME/.deno/bin" $PATH
 end
+
+# mise
+mise activate fish | source
