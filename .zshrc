@@ -23,3 +23,6 @@ alias ls='eza'
 alias ll='ls -la'
 alias grep='rg'
 alias find='fd'
+
+# mise
+eval "$(mise activate zsh)"
