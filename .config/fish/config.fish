@@ -6,6 +6,12 @@ if status is-login
 
     # Added by OrbStack: command-line tools and integration
     source ~/.orbstack/shell/init.fish 2>/dev/null || :
+
+    # Rust
+    string match -q -r ".*:$HOME/.cargo/bin:.*" $PATH
+    if not test $status -eq 0
+        set -x PATH $HOME/.cargo/bin $PATH
+    end
 end
 
 # mise
