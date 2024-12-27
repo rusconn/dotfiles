@@ -13,6 +13,7 @@ SETUVAR _fish_abbr_gca:git\x20commit\x20\x2d\x2damend
 SETUVAR _fish_abbr_gcf:git\x20commit\x20\x2d\x2dfixup
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gcp:git\x20cherry\x2dpick
+SETUVAR _fish_abbr_gcpc:git\x20cherry\x2dpick\x20\x2d\x2dcontinue
 SETUVAR _fish_abbr_gd:git\x20diff
 SETUVAR _fish_abbr_gdc:git\x20diff\x20\x2d\x2dcached
 SETUVAR _fish_abbr_gf:git\x20fetch
