@@ -3,15 +3,27 @@
 [user]
 	name = rusconn
 	email = rusconn3@gmail.com
-[rebase]
-	autosquash = true
-[fetch]
-	prune = true
-[pull]
-	ff = only
-[push]
-	autoSetupRemote = true
 [init]
 	defaultBranch = main
 [core]
 	editor = code --wait
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[commit]
+	verbose = true
+[rebase]
+	autosquash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[fetch]
+	prune = true
+	pruneTags = true
+[pull]
+	ff = only
+[push]
+	autoSetupRemote = true
