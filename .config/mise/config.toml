@@ -4,6 +4,7 @@ python = "latest"        # aws-cliよりも上に置くことで優先する
 aws-cli = "latest"
 aws-vault = "latest"
 bat = "latest"
+biome = "latest"
 deno = "latest"
 eza = "latest"
 fd = "latest"
