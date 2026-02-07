@@ -6,7 +6,7 @@
 [init]
 	defaultBranch = main
 [core]
-	editor = code --wait
+	editor = zed --wait
 [diff]
 	algorithm = histogram
 	colorMoved = plain
