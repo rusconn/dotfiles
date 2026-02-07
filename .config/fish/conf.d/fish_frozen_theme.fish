@@ -8,9 +8,9 @@
 # for appropriate commands to add to ~/.config/fish/config.fish instead.
 # See also the release notes for fish 4.3.0 (run `help relnotes`).
 
-set --global fish_color_autosuggestion 555 brblack
+set --global fish_color_autosuggestion 999 brblack
 set --global fish_color_cancel -r
-set --global fish_color_command 005fd7
+set --global fish_color_command 3999ff
 set --global fish_color_comment 990000
 set --global fish_color_cwd green
 set --global fish_color_cwd_root red
