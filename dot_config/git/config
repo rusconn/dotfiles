@@ -1,0 +1,29 @@
+[include]
+	path = config.local
+[user]
+	name = rusconn
+	email = rusconn3@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = zed --wait
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[commit]
+	verbose = true
+[rebase]
+	autosquash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[fetch]
+	prune = true
+	pruneTags = true
+[pull]
+	ff = only
+[push]
+	autoSetupRemote = true
