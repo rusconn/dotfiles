@@ -1,7 +1,4 @@
 if status is-login
-    # .env
-    export (cat ~/.env)
-
     # Rust
     string match -q -r ".*:$HOME/.cargo/bin:.*" $PATH
     if not test $status -eq 0
