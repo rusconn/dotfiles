@@ -1,15 +1,17 @@
 if status is-login
     # Rust
-    string match -q -r ".*:$HOME/.cargo/bin:.*" $PATH
-    if not test $status -eq 0
-        set -x PATH $HOME/.cargo/bin $PATH
-    end
+    fish_add_path "$HOME/.cargo/bin"
 
+    # Homebrew
     eval (/opt/homebrew/bin/brew shellenv)
 
-    # Added by OrbStack: command-line tools and integration
-    source ~/.orbstack/shell/init.fish 2>/dev/null || :
-end
+    # OrbStack
+    if test -f ~/.orbstack/shell/init.fish
+        source ~/.orbstack/shell/init.fish
+    end
 
-# mise
-mise activate fish | source
+    # mise
+    if type -q mise
+        mise activate fish | source
+    end
+end
