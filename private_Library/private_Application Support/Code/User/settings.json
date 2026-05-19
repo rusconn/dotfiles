@@ -26,12 +26,6 @@
     "pre-commit": "shellscript",
     "*.sql": "sql"
   },
-  "files.exclude": {
-    "**/.eslintcache": true,
-    "**/.next": true,
-    "**/node_modules": true,
-    "**/tsconfig.tsbuildinfo": true
-  },
   "git-graph.date.format": "ISO Date & Time",
   "github.copilot.enable": {
     "*": false,
