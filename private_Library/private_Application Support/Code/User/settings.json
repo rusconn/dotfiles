@@ -1,37 +1,5 @@
 {
   "$schema": "vscode://schemas/settings/user",
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go",
-    "editor.insertSpaces": false,
-    "editor.tabSize": 4
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[rust]": {
-    "editor.tabSize": 4
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "biome.suggestInstallingGlobally": false,
   "dotfiles.installCommand": "~/dotfiles/install.sh",
   "dotfiles.repository": "https://github.com/rusconn/dotfiles.git",
