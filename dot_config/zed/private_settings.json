@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_features": {
     "calt": false,
@@ -16,13 +21,25 @@
   },
   "buffer_font_size": 12,
   "buffer_font_weight": 500,
+  "collaboration_panel": {
+    "dock": "left",
+  },
   "git": {
     "inline_blame": {
       "enabled": false,
     },
   },
   "git_panel": {
+    "dock": "left",
     "tree_view": true,
+  },
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_modifiers": ["mutable"],
+        "underline": true,
+      },
+    ],
   },
   "lsp": {
     "vtsls": {
@@ -41,9 +58,16 @@
       "enable_lsp_tasks": true,
     },
   },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "project_panel": {
+    "dock": "left",
+  },
   "scrollbar": {
     "git_diff": true,
   },
+  "semantic_tokens": "combined",
   "tab_bar": {
     "show": false,
   },
