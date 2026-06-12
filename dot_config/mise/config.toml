@@ -1,6 +1,5 @@
 [tools]
 python = "latest" # aws-cliよりも上に置くことで優先する
-"npm:aws-cdk" = "latest"
 aws-cli = "latest"
 aws-vault = "latest"
 bat = "latest"
