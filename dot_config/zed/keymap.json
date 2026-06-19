@@ -47,4 +47,10 @@
       "ctrl-;": "terminal_panel::ToggleFocus",
     },
   },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-enter": ["terminal::SendText", "\u001b\u000d"],
+    },
+  },
 ]
