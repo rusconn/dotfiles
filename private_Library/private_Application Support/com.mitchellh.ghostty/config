@@ -56,16 +56,15 @@ command = /opt/homebrew/bin/fish
 
 # quick-terminal
 quick-terminal-position = bottom
-quick-terminal-size = 60%
+quick-terminal-size = 70%
 quick-terminal-autohide = true
 
 # global keybind
 keybind = global:cmd+backquote=toggle_quick_terminal
 
 # font
-font-family = "JetBrains Mono"
+font-family = "JetBrainsMono Nerd Font"
 font-style = "Bold"
-font-size = 13
 
 # background
 background-opacity = 0.92
