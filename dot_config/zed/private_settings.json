@@ -12,7 +12,7 @@
     "favorite_models": [],
     "model_parameters": [],
   },
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": {
     "calt": false,
   },
@@ -85,7 +85,7 @@
     "light": "One Light",
     "dark": "VSCode Dark Modern",
   },
-  "ui_font_family": "JetBrains Mono",
+  "ui_font_family": "JetBrainsMono Nerd Font",
   "ui_font_size": 13.5,
   "ui_font_weight": 500,
 }
