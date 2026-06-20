@@ -1,0 +1,10 @@
+{
+  "trustedformulae": [
+    "pgplex/pgschema/pgschema"
+  ],
+  "trustedtaps": [
+    "microsoft/git",
+    "pgplex/pgschema",
+    "pgplex/pgtui"
+  ]
+}
