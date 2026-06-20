@@ -81,3 +81,5 @@ $env.config.abbreviations = {
     gwl: "git worktree list"
     gwr: "git worktree remove"
 }
+
+source $"($nu.cache-dir)/carapace.nu"

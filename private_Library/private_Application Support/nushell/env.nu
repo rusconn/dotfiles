@@ -12,3 +12,7 @@ $env.PROMPT_COMMAND = {||
 $env.PROMPT_COMMAND_RIGHT = {||
     $"(ansi green_bold)󰥔 (date now | format date "%H:%M:%S")(ansi reset)"
 }
+
+$env.CARAPACE_BRIDGES = 'zsh,fish,bash'
+mkdir $"($nu.cache-dir)"
+carapace _carapace nushell | save --force $"($nu.cache-dir)/carapace.nu"
