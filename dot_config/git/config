@@ -5,8 +5,6 @@
 	email = rusconn3@gmail.com
 [init]
 	defaultBranch = main
-[core]
-	editor = zed --wait
 [diff]
 	algorithm = histogram
 	colorMoved = plain
