@@ -30,6 +30,7 @@ SETUVAR _fish_abbr_gap:git\x20add\x20\x2dp
 SETUVAR _fish_abbr_gbr:git\x20branch
 SETUVAR _fish_abbr_gbrd:git\x20branch\x20\x2d\x2ddelete
 SETUVAR _fish_abbr_gbrdf:git\x20branch\x20\x2d\x2ddelete\x20\x2d\x2dforce
+SETUVAR _fish_abbr_gbrf:git\x20branch\x20\x2d\x2dforce
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gca:git\x20commit\x20\x2d\x2damend
 SETUVAR _fish_abbr_gcf:git\x20commit\x20\x2d\x2dfixup
@@ -77,6 +78,7 @@ SETUVAR _fish_abbr_gst:git\x20status
 SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gsw_2D_:git\x20switch\x20\x2d
 SETUVAR _fish_abbr_gswc:git\x20switch\x20\x2d\x2dcreate
+SETUVAR _fish_abbr_gswcf:git\x20switch\x20\x2d\x2dforce\x2dcreate
 SETUVAR _fish_abbr_gswd:git\x20switch\x20\x2d\x2ddetach
 SETUVAR _fish_abbr_gwa:git\x20worktree\x20add
 SETUVAR _fish_abbr_gwab:git\x20worktree\x20add\x20\x2db
