@@ -5,6 +5,8 @@
 	email = rusconn3@gmail.com
 [init]
 	defaultBranch = main
+[core]
+	quotepath = false
 [diff]
 	algorithm = histogram
 	colorMoved = plain
