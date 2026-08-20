@@ -1,5 +1,6 @@
 [tools]
 python = "latest" # aws-cliよりも上に置くことで優先する
+aspire = "latest"
 aws-cli = "latest"
 aws-vault = "latest"
 bat = "latest"
