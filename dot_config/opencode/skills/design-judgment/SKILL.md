@@ -9,3 +9,5 @@ description: Architecture and code design guidelines
 - Avoid premature optimization
 - Adhere to established design patterns
   - However, clearly identify any problematic aspects and proposed improvements when necessary
+- Consider abstractions based on code semantics rather than structural code reusability
+- When possible, write code using a top-down approach
