@@ -3,6 +3,7 @@ tap "pgplex/pgschema", trusted: true
 tap "pgplex/pgtui", "https://github.com/pgplex/homebrew-pgtui.git", trusted: true
 brew "ca-certificates"
 brew "libtiff"
+brew "ffmpeg-full"
 brew "fish"
 brew "gh"
 brew "git"
