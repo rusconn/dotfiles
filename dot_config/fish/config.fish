@@ -5,6 +5,9 @@ if status is-login
     # Homebrew
     eval (/opt/homebrew/bin/brew shellenv)
 
+    # ffmpeg-full
+    fish_add_path --move --prepend /opt/homebrew/opt/ffmpeg-full/bin
+
     # OrbStack
     if test -f ~/.orbstack/shell/init.fish
         source ~/.orbstack/shell/init.fish

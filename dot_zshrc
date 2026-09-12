@@ -26,3 +26,6 @@ alias find='fd'
 
 # mise
 eval "$(mise activate zsh)"
+
+# ffmpeg-full
+export PATH="/opt/homebrew/opt/ffmpeg-full/bin:$PATH"
