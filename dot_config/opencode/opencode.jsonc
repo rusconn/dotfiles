@@ -4,6 +4,7 @@
   "permission": {
     "external_directory": {
       "~/.config/opencode/**": "allow",
+      "~/.cargo/registry/src": "allow",
       "/tmp/**": "allow",
       "/var/**": "allow",
     }
