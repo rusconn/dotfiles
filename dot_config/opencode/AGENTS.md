@@ -10,3 +10,6 @@
 - If blocking occurs, provide both the cause and proposed solution
 - Never silently override user modifications
 - Don't rush implementation - thoroughly verify assumptions, determine the desired direction, and carefully consider the design
+- Before inventing a solution, first research standard or conventional
+  approaches (official docs, known issues, community practice) — see the
+  design-judgment skill

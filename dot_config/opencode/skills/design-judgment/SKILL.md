@@ -1,6 +1,6 @@
 ---
 name: design-judgment
-description: Architecture and code design guidelines
+description: Design and problem-solving judgment for any technical decision.
 ---
 
 - Do not invent solutions from scratch; first research standard or conventional approaches
