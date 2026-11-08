@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "diff_view_style": "unified",
   "agent": {
     "dock": "right",
     "favorite_models": [],
@@ -89,4 +90,5 @@
   "ui_font_family": "JetBrainsMono Nerd Font",
   "ui_font_size": 13.5,
   "ui_font_weight": 500,
+  "use_system_window_tabs": true,
 }
