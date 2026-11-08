@@ -7,6 +7,7 @@
 	defaultBranch = main
 [core]
 	quotepath = false
+	editor = nvim
 [diff]
 	algorithm = histogram
 	colorMoved = plain
@@ -27,3 +28,5 @@
 	ff = only
 [push]
 	autoSetupRemote = true
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
