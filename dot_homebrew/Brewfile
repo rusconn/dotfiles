@@ -15,6 +15,7 @@ brew "tree"
 brew "vhs"
 brew "vorbis-tools"
 brew "wget"
+# cask "alacritty" # macOSの場合GitHubから手動でダウンロードする
 cask "android-file-transfer"
 cask "android-platform-tools"
 cask "antigravity-cli"
