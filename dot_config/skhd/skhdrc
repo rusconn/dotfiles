@@ -1,0 +1,14 @@
+ralt - a : open -b com.apple.ActivityMonitor
+ralt - f : open -b com.apple.Finder
+ralt - w : open -b com.apple.weather
+
+ralt - t : open /Applications/Alacritty.app
+ralt - b : open /Applications/Brave\ Browser.app
+ralt - c : open /Applications/ChatGPT.app
+ralt - g : open /Applications/Ghostty.app
+ralt - k : open /Applications/kitty.app
+ralt - z : open /Applications/Zed.app
+
+ralt - s : open /Users/rusconn/Applications/Brave\ Browser\ Apps.localized/Cosense.app
+ralt - p : open /Users/rusconn/Applications/Brave\ Browser\ Apps.localized/PLaMo翻訳.app
+ralt - x : open /Users/rusconn/Applications/Brave\ Browser\ Apps.localized/X.app

@@ -6,5 +6,8 @@
     "microsoft/git",
     "pgplex/pgschema",
     "pgplex/pgtui"
+  ],
+  "trustedcasks": [
+    "jackielii/tap/skhd-zig"
   ]
 }
