@@ -1,5 +1,6 @@
 {
   "trustedformulae": [
+    "charmbracelet/tap/crush",
     "pgplex/pgschema/pgschema"
   ],
   "trustedtaps": [

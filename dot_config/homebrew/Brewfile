@@ -1,3 +1,4 @@
+tap "charmbracelet/tap"
 tap "jackielii/tap"
 tap "microsoft/git", trusted: true
 tap "pgplex/pgschema", trusted: true
@@ -20,6 +21,7 @@ brew "vhs"
 brew "vorbis-tools"
 brew "wget"
 brew "xdg-ninja"
+brew "charmbracelet/tap/crush", trusted: true
 # cask "alacritty" # macOSの場合GitHubから手動でダウンロードする
 cask "android-file-transfer"
 cask "android-platform-tools"
