@@ -22,5 +22,5 @@ text = "CellForeground"
 background = "#304E75"
 
 [terminal.shell]
-program = "/opt/homebrew/bin/fish"
+program = "{{ lookPath "fish" | default "fish" }}"
 args = ["-l"]

@@ -2,7 +2,7 @@
 # Shell & System
 # ==========================================
 # 環境変数に依存しないフルパス指定に変更
-shell /opt/homebrew/bin/fish --login
+shell {{ lookPath "fish" | default "fish" }} --login
 macos_quit_when_last_window_closed yes
 
 # ==========================================

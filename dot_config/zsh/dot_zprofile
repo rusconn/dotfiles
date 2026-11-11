@@ -2,10 +2,22 @@
 export PATH="$CARGO_HOME/bin:$PATH"
 
 # Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ -x /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -x /usr/local/bin/brew ]]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 
 # ffmpeg-full
-export PATH="/opt/homebrew/opt/ffmpeg-full/bin:$PATH"
+if [[ -d /opt/homebrew/opt/ffmpeg-full/bin ]]; then
+  export PATH="/opt/homebrew/opt/ffmpeg-full/bin:$PATH"
+elif [[ -d /usr/local/opt/ffmpeg-full/bin ]]; then
+  export PATH="/usr/local/opt/ffmpeg-full/bin:$PATH"
+elif [[ -d /home/linuxbrew/.linuxbrew/opt/ffmpeg-full/bin ]]; then
+  export PATH="/home/linuxbrew/.linuxbrew/opt/ffmpeg-full/bin:$PATH"
+fi
 
 # Added by OrbStack: command-line tools and integration
 source "$HOME/.orbstack/shell/init.zsh" 2>/dev/null || :

@@ -3,7 +3,7 @@ macos-titlebar-style = tabs
 macos-window-buttons = hidden
 
 # shell
-command = /opt/homebrew/bin/fish
+command = {{ lookPath "fish" | default "fish" }}
 
 # quick-terminal
 quick-terminal-position = bottom
