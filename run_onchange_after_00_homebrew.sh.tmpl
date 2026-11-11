@@ -18,7 +18,7 @@ if [ "$response" != "n" ] && [ "$response" != "N" ]; then
   export HOMEBREW_BUNDLE_FILE_GLOBAL="$HOME/.config/homebrew/Brewfile"
 
   echo "Installing packages from Brewfile..."
-  brew bundle --global
+  brew bundle --global --no-upgrade
 else
   echo "Skipping Homebrew bundle installation by user request."
 fi
