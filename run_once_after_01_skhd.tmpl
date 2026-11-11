@@ -1,21 +1,20 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 
-{{- $runSkhd := promptBool "Setup and start skhd service?" -}}
-{{- if $runSkhd -}}
+printf "Setup and start skhd service? [Y/n]: "
+read -r response
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ "$response" != "n" ] && [ "$response" != "N" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 
-if command -v skhd &> /dev/null; then
-  echo "Setting up skhd service..."
-  skhd --install-service && skhd --start-service
+  if command -v skhd &> /dev/null; then
+    echo "Setting up skhd service..."
+    skhd --install-service && skhd --start-service
+  else
+    echo "Warning: skhd command not found. Skipping service setup (did you skip Homebrew installation?)."
+  fi
 else
-  echo "Warning: skhd command not found. Skipping service setup (did you skip Homebrew installation?)."
+  echo "Skipping skhd service setup by user request."
 fi
 
-{{- else -}}
-echo "Skipping skhd service setup by user request."
 {{- end -}}
-
-{{- end -}}
-
