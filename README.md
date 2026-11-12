@@ -13,3 +13,13 @@ sh -c "$(curl -fsLS get.chezmoi.io)"
 ```sh
 ./bin/chezmoi init --apply $GITHUB_USERNAME
 ```
+
+## State reset for rerunning scripts
+
+```sh
+# run_once_*
+chezmoi state delete-bucket --bucket=scriptState
+
+# run_onchange_*
+chezmoi state delete-bucket --bucket=entryState
+```
