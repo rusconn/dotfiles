@@ -1,0 +1,54 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+
+{{- $cargoBins := list
+  "cargo-audit"
+  "cargo-cache"
+  "cargo-edit"
+  "cargo-expand"
+  "cargo-license"
+  "kondo"
+  "samply"
+  "sasurahime"
+-}}
+
+# Cargo bins hash: {{ $cargoBins | join " " | sha256sum }}
+
+printf "Install/Update Cargo binaries via cargo-binstall? [Y/n]: "
+read -r response
+
+if [ "$response" != "n" ] && [ "$response" != "N" ]; then
+  # Find mise binary
+  MISE_BIN=""
+  if command -v mise >/dev/null 2>&1; then
+    MISE_BIN="$(command -v mise)"
+  elif [ -x "$HOME/.local/bin/mise" ]; then
+    MISE_BIN="$HOME/.local/bin/mise"
+  elif [ -x "/opt/homebrew/bin/mise" ]; then
+    MISE_BIN="/opt/homebrew/bin/mise"
+  fi
+
+  if [ -z "$MISE_BIN" ]; then
+    echo "Error: mise command not found."
+    exit 1
+  fi
+
+  # Check cargo availability via mise
+  if ! "$MISE_BIN" exec -- cargo --version >/dev/null 2>&1; then
+    echo "Error: cargo is not available via mise. Please ensure mise rust tool is installed."
+    exit 1
+  fi
+
+  # Install cargo-binstall if not present (using mise to ensure correct environment)
+  if ! "$MISE_BIN" exec -- cargo-binstall --version >/dev/null 2>&1; then
+    echo "Installing cargo-binstall..."
+    "$MISE_BIN" exec -- sh -c "curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | sh"
+  fi
+
+  echo "Installing/updating Cargo binaries..."
+  "$MISE_BIN" exec -- cargo binstall -y {{ $cargoBins | join " " }}
+else
+  echo "Skipping Cargo binaries installation by user request."
+fi
+
+{{- end -}}
