@@ -1,7 +1,7 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 
-# Brewfile hash: {{ include "dot_config/homebrew/Brewfile" | sha256sum }}
+# Brewfile hash: {{ include "dot_config/homebrew/Brewfile.tmpl" | sha256sum }}
 
 printf "Install/Update Homebrew packages from Brewfile? [Y/n]: "
 read -r response

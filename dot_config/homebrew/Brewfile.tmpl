@@ -1,5 +1,4 @@
 tap "charmbracelet/tap"
-tap "jackielii/tap"
 tap "microsoft/git", trusted: true
 brew "ca-certificates"
 brew "libtiff"
@@ -17,6 +16,9 @@ brew "tree"
 brew "vhs"
 brew "vorbis-tools"
 brew "wget"
+
+{{- if eq .chezmoi.os "darwin" }}
+tap "jackielii/tap"
 cask "android-file-transfer"
 cask "android-platform-tools"
 cask "appcleaner"
@@ -40,3 +42,4 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 cask "zed"
 cask "zoom"
+{{- end }}
