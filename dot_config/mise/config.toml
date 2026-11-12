@@ -1,5 +1,8 @@
+[settings]
+idiomatic_version_file_enable_tools = ["rust"]
+
 [tools]
-python = "latest" # aws-cliよりも上に置くことで優先する
+python = "latest"    # aws-cliよりも上に置くことで優先する
 aspire = "latest"
 aws-cli = "latest"
 aws-vault = "latest"
@@ -26,6 +29,7 @@ oha = "latest"
 opencode = "latest"
 pnpm = "latest"
 ripgrep = "latest"
+rust = "latest"
 shellcheck = "latest"
 tokei = "latest"
 uv = "latest"
