@@ -1,13 +1,10 @@
 tap "charmbracelet/tap"
 tap "jackielii/tap"
 tap "microsoft/git", trusted: true
-tap "pgplex/pgschema", trusted: true
-tap "pgplex/pgtui", "https://github.com/pgplex/homebrew-pgtui.git", trusted: true
 brew "ca-certificates"
 brew "libtiff"
 brew "ffmpeg-full"
 brew "fish"
-brew "gh"
 brew "git"
 brew "graphviz"
 brew "llvm"
@@ -20,11 +17,8 @@ brew "tree"
 brew "vhs"
 brew "vorbis-tools"
 brew "wget"
-brew "xdg-ninja"
-brew "charmbracelet/tap/crush", trusted: true
 cask "android-file-transfer"
 cask "android-platform-tools"
-cask "antigravity-cli"
 cask "appcleaner"
 cask "brave-browser"
 cask "codex-app"

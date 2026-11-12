@@ -1,14 +1,4 @@
 {
-  "trustedformulae": [
-    "charmbracelet/tap/crush",
-    "pgplex/pgschema/pgschema"
-  ],
-  "trustedtaps": [
-    "microsoft/git",
-    "pgplex/pgschema",
-    "pgplex/pgtui"
-  ],
-  "trustedcasks": [
-    "jackielii/tap/skhd-zig"
-  ]
+  "trustedtaps": ["microsoft/git"],
+  "trustedcasks": ["jackielii/tap/skhd-zig"]
 }
