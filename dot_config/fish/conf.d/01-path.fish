@@ -21,6 +21,15 @@ else if test -d /home/linuxbrew/.linuxbrew/opt/ffmpeg-full/bin
     fish_add_path --move /home/linuxbrew/.linuxbrew/opt/ffmpeg-full/bin
 end
 
+# libpq
+if test -d /opt/homebrew/opt/libpq/bin
+    fish_add_path --move /opt/homebrew/opt/libpq/bin
+else if test -d /usr/local/opt/libpq/bin
+    fish_add_path --move /usr/local/opt/libpq/bin
+else if test -d /home/linuxbrew/.linuxbrew/opt/libpq/bin
+    fish_add_path --move /home/linuxbrew/.linuxbrew/opt/libpq/bin
+end
+
 # OrbStack
 if test -f ~/.orbstack/shell/init.fish
     source ~/.orbstack/shell/init.fish

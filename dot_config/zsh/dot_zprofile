@@ -19,6 +19,15 @@ elif [[ -d /home/linuxbrew/.linuxbrew/opt/ffmpeg-full/bin ]]; then
   export PATH="/home/linuxbrew/.linuxbrew/opt/ffmpeg-full/bin:$PATH"
 fi
 
+# libpq
+if [[ -d /opt/homebrew/opt/libpq/bin ]]; then
+  export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+elif [[ -d /usr/local/opt/libpq/bin ]]; then
+  export PATH="/usr/local/opt/libpq/bin:$PATH"
+elif [[ -d /home/linuxbrew/.linuxbrew/opt/libpq/bin ]]; then
+  export PATH="/home/linuxbrew/.linuxbrew/opt/libpq/bin:$PATH"
+fi
+
 # Added by OrbStack: command-line tools and integration
 source "$HOME/.orbstack/shell/init.zsh" 2>/dev/null || :
 
