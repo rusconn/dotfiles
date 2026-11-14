@@ -1,5 +1,15 @@
 local map = vim.keymap.set
 
+-- x(1文字削除)でレジスタを上書きしない
+map({ "n", "x" }, "x", '"_x', { desc = "Delete char without yanking" })
+
+-- c(変更)でレジスタを上書きしない
+map({ "n", "x" }, "c", '"_c', { desc = "Change without yanking" })
+map("n", "C", '"_C', { desc = "Change to end of line without yanking" })
+
+-- ビジュアルモードで選択範囲にペーストしたとき、消えた文字でレジスタを上書きしない
+map("x", "p", '"_dP', { desc = "Paste without overwriting register" })
+
 map("n", "<leader>fy", function()
   local path = vim.fn.expand("%:.")
   vim.fn.setreg("+", path)
