@@ -1,8 +1,9 @@
 [settings]
+activate_shims = false
 idiomatic_version_file_enable_tools = ["rust"]
 
 [tools]
-python = "latest"    # aws-cliよりも上に置くことで優先する
+python = "latest"          # aws-cliよりも上に置くことで優先する
 antigravity-cli = "latest"
 aspire = "latest"
 aws-cli = "latest"
