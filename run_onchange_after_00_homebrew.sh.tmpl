@@ -3,16 +3,6 @@
 
 # Brewfile hash: {{ include "dot_config/homebrew/Brewfile.tmpl" | sha256sum }}
 
-{{- if eq .chezmoi.os "darwin" }}
-# Ensure Xcode Command Line Tools are installed
-if ! xcode-select -p >/dev/null 2>&1; then
-  echo "Xcode Command Line Tools not found. Requesting installation..."
-  xcode-select --install
-  echo "Please complete the Xcode Command Line Tools installation dialog, then press Enter to continue..."
-  read -r _
-fi
-{{- end }}
-
 printf "Install/Update Homebrew packages from Brewfile? [Y/n]: "
 read -r response
 
