@@ -31,6 +31,6 @@ else if test -d /home/linuxbrew/.linuxbrew/opt/libpq/bin
 end
 
 # OrbStack
-if test -f ~/.orbstack/shell/init.fish
-    source ~/.orbstack/shell/init.fish
+if test -f ~/.orbstack/shell/init2.fish
+    source ~/.orbstack/shell/init2.fish
 end
