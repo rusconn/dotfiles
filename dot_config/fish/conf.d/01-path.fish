@@ -2,7 +2,7 @@
 fish_add_path "$CARGO_HOME/bin"
 
 # Homebrew
-if status is-login
+if not command -q brew
     if test -x /opt/homebrew/bin/brew
         eval (/opt/homebrew/bin/brew shellenv)
     else if test -x /usr/local/bin/brew

@@ -4,7 +4,7 @@ set -gx XDG_CACHE_HOME $HOME/.cache
 set -gx XDG_DATA_HOME $HOME/.local/share
 set -gx XDG_STATE_HOME $HOME/.local/state
 
-# Tool dirs
+# Tool paths
 set -gx AWS_CONFIG_FILE $XDG_CONFIG_HOME/aws/config
 set -gx AWS_SHARED_CREDENTIALS_FILE $XDG_CONFIG_HOME/aws/credentials
 set -gx CARGO_HOME $XDG_DATA_HOME/cargo
