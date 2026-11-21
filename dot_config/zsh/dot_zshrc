@@ -1,15 +1,11 @@
-# Homebrew: パスが通っていない場合はパスを通す
-if (( $+commands[brew] )); then
-elif [[ -x /opt/homebrew/bin/brew ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-elif [[ -x /usr/local/bin/brew ]]; then
-  eval "$(/usr/local/bin/brew shellenv)"
-elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
+# Create directories on first run (for history and compinit dump)
+[[ -d "$XDG_STATE_HOME/zsh" && -d "$XDG_CACHE_HOME/zsh" ]] ||
+  mkdir -p "$XDG_STATE_HOME/zsh" "$XDG_CACHE_HOME/zsh"
 
 # zsh
 HISTFILE="$XDG_STATE_HOME/zsh/history"
+HISTSIZE=10000
+SAVEHIST=10000
 autoload -Uz compinit
 compinit -d "${XDG_CACHE_HOME}/zsh/zcompdump-$ZSH_VERSION"
 
@@ -23,14 +19,19 @@ setopt no_flow_control
 TIMEFMT=$'\nreal\t%*Es\nuser\t%*Us\nsys\t%*Ss'
 
 # history config
-setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_REDUCE_BLANKS
 setopt HIST_NO_STORE
+setopt SHARE_HISTORY
+
+# OrbStack: command-line tools and integration
+source "$HOME/.orbstack/shell/init.zsh" 2>/dev/null || :
+
+# mise
+if (( $+commands[mise] )); then
+  eval "$(mise activate zsh)"
+fi
 
 # aliases
-alias ls='eza'
-alias ll='ls -la'
-alias grep='rg'
-alias find='fd'
+alias ll='eza -lha'
