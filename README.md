@@ -1,25 +1,53 @@
 # dotfiles
 
-## Setup
+Execute in order from top to bottom.
 
-### 1. Install chezmoi
+## macOS
 
 ```sh
-sh -c "$(curl -fsLS get.chezmoi.io)"
+# Command Line Tools for Xcode (needs interaction)
+xcode-select -p >/dev/null 2>&1 || xcode-select --install
+
+# dotfiles
+sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --apply rusconn
+
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew bundle --global
+
+# (reboot shell)
+
+# mise
+mise install
+
+# skhd
+skhd --install-service && skhd --start-service
+
+# cargo
+cargo install cargo-binstall
+cargo binstall -y cargo-audit cargo-cache cargo-edit cargo-expand \
+  cargo-license cargo-msrv kondo samply sasurahime
 ```
 
-### 2. Apply dotfiles
+## Linux
 
 ```sh
-./bin/chezmoi init --apply $GITHUB_USERNAME
-```
+# dotfiles
+sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --apply rusconn
 
-## State reset for rerunning scripts
+# Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew bundle --global
 
-```sh
-# run_once_*
-chezmoi state delete-bucket --bucket=scriptState
+# (reboot shell)
 
-# run_onchange_*
-chezmoi state delete-bucket --bucket=entryState
+# mise
+mise install
+
+# cargo
+cargo install cargo-binstall
+cargo binstall -y cargo-audit cargo-cache cargo-edit cargo-expand \
+  cargo-license cargo-msrv kondo samply
 ```
