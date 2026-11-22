@@ -23,11 +23,6 @@ mise install
 
 # skhd
 skhd --install-service && skhd --start-service
-
-# cargo
-cargo install cargo-binstall
-cargo binstall -y cargo-audit cargo-cache cargo-edit cargo-expand \
-  cargo-license cargo-msrv kondo samply sasurahime
 ```
 
 ## Linux
@@ -45,9 +40,4 @@ brew bundle --global
 
 # mise
 mise install
-
-# cargo
-cargo install cargo-binstall
-cargo binstall -y cargo-audit cargo-cache cargo-edit cargo-expand \
-  cargo-license cargo-msrv kondo samply
 ```

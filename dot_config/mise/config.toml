@@ -1,9 +1,10 @@
 [settings]
 activate_shims = false
+cargo.binstall_quickinstall = true
 idiomatic_version_file_enable_tools = ["rust"]
 
 [tools]
-python = "latest"          # aws-cliよりも上に置くことで優先する
+python = "latest"                                         # aws-cliよりも上に置くことで優先する
 antigravity-cli = "latest"
 aspire = "latest"
 aws-cli = "latest"
@@ -11,6 +12,16 @@ aws-vault = "latest"
 bat = "latest"
 biome = "latest"
 carapace = "latest"
+cargo-binstall = "latest"
+"cargo:cargo-audit" = "latest"
+"cargo:cargo-cache" = "latest"
+"cargo:cargo-edit" = "latest"
+"cargo:cargo-expand" = "latest"
+"cargo:cargo-license" = "latest"
+"cargo:cargo-msrv" = "latest"
+"cargo:kondo" = "latest"
+"cargo:samply" = "latest"
+"cargo:sasurahime" = { version = "latest", os = "macos" }
 chezmoi = "latest"
 crush = "latest"
 deno = "latest"
