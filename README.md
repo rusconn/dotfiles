@@ -2,7 +2,9 @@
 
 Execute in order from top to bottom.
 
-## macOS
+## Basic setup
+
+### macOS
 
 ```sh
 # Command Line Tools for Xcode (needs interaction)
@@ -25,7 +27,7 @@ mise install
 skhd --install-service && skhd --start-service
 ```
 
-## Linux
+### Linux
 
 ```sh
 # dotfiles
@@ -40,4 +42,19 @@ brew bundle --global
 
 # mise
 mise install
+```
+
+## Rust setup
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path
+
+cargo binstall -y --strategies crate-meta-data,compile --disable-telemetry \
+  cargo-audit \
+  cargo-edit \
+  cargo-expand \
+  cargo-license \
+  cargo-msrv \
+  kondo \
+  samply
 ```

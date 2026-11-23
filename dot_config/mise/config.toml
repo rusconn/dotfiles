@@ -1,7 +1,5 @@
 [settings]
 activate_shims = false
-cargo.binstall_quickinstall = true
-idiomatic_version_file_enable_tools = ["rust"]
 
 [tools]
 python = "latest"                 # aws-cliよりも上に置くことで優先する
@@ -11,14 +9,6 @@ aspire = "latest"
 aws-cli = "latest"
 aws-vault = "latest"
 biome = "latest"
-cargo-binstall = "latest"
-"cargo:cargo-audit" = "latest"
-"cargo:cargo-edit" = "latest"
-"cargo:cargo-expand" = "latest"
-"cargo:cargo-license" = "latest"
-"cargo:cargo-msrv" = "latest"
-"cargo:kondo" = "latest"
-"cargo:samply" = "latest"
 deno = "latest"
 gcloud = "latest"
 go = "latest"
@@ -27,6 +17,5 @@ node = "latest"
 # npm版の理由: スタンドアロンバイナリにarm64が無いよう: https://github.com/firebase/firebase-tools/issues/11318
 "npm:firebase-tools" = "latest"
 pnpm = "latest"
-rust = "latest"
 uv = "latest"
 wasmtime = "latest"
