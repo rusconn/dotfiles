@@ -1,4 +1,12 @@
 {
-  "trustedtaps": ["microsoft/git"],
-  "trustedcasks": ["jackielii/tap/skhd-zig"]
+  "trustedtaps": [
+    "charmbracelet/tap",
+    "microsoft/git"
+  ],
+  "trustedcasks": [
+    "jackielii/tap/skhd-zig"
+  ],
+  "trustedformulae": [
+    "charmbracelet/tap/crush"
+  ]
 }
