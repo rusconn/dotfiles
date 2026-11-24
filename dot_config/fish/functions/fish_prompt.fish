@@ -1,3 +1,14 @@
+function __prompt_in_git_repo
+    set -l dir $PWD
+    while test "$dir" != /
+        if test -e $dir/.git
+            return 0
+        end
+        set dir (path dirname $dir)
+    end
+    return 1
+end
+
 function fish_prompt --description 'Write out the prompt'
     set -l last_pipestatus $pipestatus
     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
@@ -17,9 +28,11 @@ function fish_prompt --description 'Write out the prompt'
     set_color normal
 
     # Git: branch or hash
-    set -l branch (command git symbolic-ref --short HEAD 2>/dev/null; or command git rev-parse --short HEAD 2>/dev/null)
-    if test -n "$branch"
-        printf ' (%s)' $branch
+    if __prompt_in_git_repo
+        set -l branch (command git symbolic-ref --short HEAD 2>/dev/null; or command git rev-parse --short HEAD 2>/dev/null)
+        if test -n "$branch"
+            printf ' (%s)' $branch
+        end
     end
     echo -n ' '
 
