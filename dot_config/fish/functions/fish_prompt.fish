@@ -31,7 +31,9 @@ function fish_prompt --description 'Write out the prompt'
     if __prompt_in_git_repo
         set -l branch (command git symbolic-ref --short HEAD 2>/dev/null; or command git rev-parse --short HEAD 2>/dev/null)
         if test -n "$branch"
-            printf ' (%s)' $branch
+            set_color yellow
+            printf ' %s' $branch
+            set_color normal
         end
     end
     echo -n ' '
